@@ -6,7 +6,7 @@ import { WeatherProvider } from '../../providers/weather/weather';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  weather: any;
+  weather;
   location: {
     city: string,
     state: string
@@ -20,8 +20,8 @@ export class HomePage {
       state: "FL"
     }
 
-  this.weatherProvider.getWeather(this.location.city,this.location.state).subscribe(weather => {
-    console.log(weather);
+  this.weatherProvider.getWeather(this.location.city,this.location.state).subscribe( (weather:any) => {
+    this.weather = weather.current_observation;
   });
   }
 }
