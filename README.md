@@ -16,13 +16,9 @@ NPM,NodeJS (These can be installed together at https://nodejs.org/en/)
 Ionic,Cordova (This can be installed using npm with <code>npm install -g ionic cordova</code>)
 
 ### Running
-`
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+This app can run on a live server by using <code>ionic serve</code>
+This will run a live dev server on your desired port, all changes to the files will update in the browser tab and can speed up development. Instructions to run on android or Ios can be found in the Ionic documentation at https://ionicframework.com/docs/
 
 ## Built With
 
